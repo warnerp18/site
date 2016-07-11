@@ -6,7 +6,6 @@ import Menu from './menu';
 export default class Front extends Component {
 
   scrollToNextSection(){
-    console.log('click');
     $('html, body').animate({
         scrollTop: $(".aboutme").offset().top
     }, 1500);
@@ -20,7 +19,7 @@ export default class Front extends Component {
         <section className='header-image'>
           <div className='text-container'>
             <h1>I am Phil</h1><br />
-            <h2>I like to code & learn</h2>
+            <h2>I love to code & learn more</h2>
             <a href='#' onClick={this.scrollToNextSection}>read more</a>
           </div>
         </section>

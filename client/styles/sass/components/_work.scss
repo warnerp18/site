@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+}
+.workComponent{
+  .workDescription{
+    margin-top: 60px;
+    text-align: center;
+    h1{
+      margin-bottom: 30px;
+      color: black;
+      text-shadow: none;
+    }
+  }
+  .work-container{
+    max-width: 1024px;
+    margin: 0 auto;
+    &:after{
+      display: block;
+      content: "";
+      clear: both;
+    }
+    @include breakpoint(max-width 1024px){
+      padding: 0 15px;
+    }
+    .thirds{
+      float: left;
+      width: 30%;
+      margin-right: 30px;
+      &:after{
+        display: block;
+        content: "";
+        clear: both;
+      }
+      &.row-3{
+        margin-right: 0;
+      }
+      .imageContainer{
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        p {
+          text-align: center;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      @include breakpoint(max-width 900px){
+        width: 100%;
+        margin: 0 auto;
+        .imageContainer{
+          max-width: 580px;
+          width: 100%;
+          margin: 30px auto;
+          padding: 0 15px 30px;
+        }
+      }
+    }
+  }
+}
+

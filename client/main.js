@@ -10,8 +10,12 @@ $(function() {
   let navbarHeight = $('.menu').outerHeight();
 
   $(document).ready(function(){
+    console.log('ready')
     $('.header-image').css("height", height);
   });
+  $('header-image').load(function(){
+    console.log('header image laoded');
+  })
   $(window).resize(function(){
   let resizeHeight = $(window).height();
     $('.header-image').css("height", resizeHeight);

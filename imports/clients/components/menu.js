@@ -16,9 +16,6 @@ export default class Menu extends Component {
          <Link to="#" className='menuLink'>Pics</Link>
        </span>
        <span>
-         <Link to="#" className='menuLink'>About</Link>
-       </span>
-       <span>
          <Link to="/work" className='menuLink'>Work</Link>
        </span>
        <span>
