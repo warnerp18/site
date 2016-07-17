@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Menu from './menu';
+import Footer from './footer';
 
 
 export default class Front extends Component {
@@ -42,6 +43,8 @@ export default class Front extends Component {
           <p className='contain580'>I spent the next four years traveling to over 35 countries and working overseas. Until I came across an article talking about the demand for developers. This article pointed me to codecademy.com. My love for coding started at codecademy and my desire to learn more has only grown.</p>
           <p className='contain580'>I spent the next four years traveling to over 35 countries and working overseas. Until I came across an article talking about the demand for developers. This article pointed me to codecademy.com. My love for coding started at codecademy and my desire to learn more has only grown.</p>
             </section>
+
+      <Footer />
       </div>
     )
   }

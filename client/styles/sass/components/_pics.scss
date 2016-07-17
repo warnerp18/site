@@ -1,0 +1,43 @@
+.pic-page {
+  padding: 60px 0;
+  .pics-about {
+    text-align: center;
+  }
+  .image-galleries{
+    max-width: 1024px;
+    margin: 0 auto;
+    @include breakpoint(max-width 1024px){
+      padding: 0 15px;
+    }
+    a {
+      width: 50%;
+      margin: 0 0 -8px;
+      position: relative;
+      &:hover {
+        opacity: .7;
+      }
+      img{
+        width: 100%;
+      }
+      h2{
+        position: absolute;
+        top: 30%;
+        right: 50%;
+        transform: translate(50%);
+        text-align: center;
+        background: rgba(0,0,0, .5);
+        padding: 0 5px;
+      }
+      span {
+        position: absolute;
+        top: 45%;
+        right: 50%;
+        transform: translate(50%);
+        color: white;
+        text-align: center;
+        background: rgba(0,0,0, .5);
+        padding: 0 5px;
+      }
+    }
+  }
+}
