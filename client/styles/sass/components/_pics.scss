@@ -4,7 +4,7 @@
     text-align: center;
   }
   .image-galleries{
-    max-width: 1024px;
+    max-width: 1300px;
     margin: 0 auto;
     @include breakpoint(max-width 1024px){
       padding: 0 15px;
@@ -38,6 +38,32 @@
         background: rgba(0,0,0, .5);
         padding: 0 5px;
       }
+    }
+  }
+}
+
+
+.iceland-gallery-page{
+  .header-image{
+    background: url('/images/iceland/iceland7.jpg');
+    background-size: cover;
+  }
+}
+
+.gallery-page{
+  .pswp-gallery{
+    max-width: 1300px;
+    margin: 0 auto;
+    @include breakpoint(max-width 1300px){
+      padding: 0 15px;
+    }
+    .pswp-thumbnail{
+       width: 50%;
+       float: left;
+       margin-bottom: -8px;
+       img{
+         width: 100%;
+       }
     }
   }
 }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
+import {PhotoSwipeGallery} from 'react-photoswipe';
+
 export default class ImageGalleries extends Component {
   render() {
     return (
@@ -8,14 +10,14 @@ export default class ImageGalleries extends Component {
         <Link to="" className='float-left'>
           <img src='/images/yellowstone/cubs.jpg' />
           <h2>Montana/YellowStone</h2>
-          <span></span>
+          <span>A week long trip to Montana and YellowStone Nation Park</span>
         </Link>
         <Link to="" className='float-left'>
           <img src='/images/nepal/everest1.jpg' />
           <h2>Nepal</h2>
           <span>A 3 week trip to Everest Base Camp and around Nepal</span>
         </Link>
-        <Link to="" className='float-left'>
+        <Link to="#" className='float-left'>
           <img src='/images/iceland/iceland1.jpg' />
           <h2>Iceland</h2>
           <span>One of my favorite countries I've ever visited.</span>
