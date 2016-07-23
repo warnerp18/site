@@ -24,7 +24,7 @@ export default class Front extends Component {
                 <a href='#' onClick={this.scrollToNextSection}>read more</a>
         </div>
       </section>
-      <section className='contain580 push60'>
+      <section className='contain580 push60 aboutme'>
       <p>
           <span>My</span>
           <b> name is Phil Warner.</b>
