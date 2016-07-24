@@ -10,7 +10,7 @@ $(function() {
   let navbarHeight = $('.menu').outerHeight();
 
   $(document).ready(function(){
-    console.log('ready')
+    console.log('email me at warnerp18@gmail.com')
     $('.header-image').css("height", height);
   });
   $('header-image').load(function(){
