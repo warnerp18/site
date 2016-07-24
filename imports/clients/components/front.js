@@ -25,10 +25,12 @@ export default class Front extends Component {
         </div>
       </section>
       <section className='contain580 push60 aboutme'>
-      <p>
+      <div className='push60'>
+        <p>
           <span>My</span>
-          <b> name is Phil Warner.</b>
-          I started programming two years ago. I attended the Iron Yard's Front End Engineering course in Houston, TX in September 2014. While attending The Iron Yard I learned the basics of HTML5, CSS3, and Javascript. I’m proficient in Drupal 7 and am building modules to support Drupal 8. Outside of work I have been teaching myself Meteor and React using resources such as egghead.io, leveluptutorials.com, themeteorchef.com, meteor.com, & facebook.github.io/react.</p>
+          <b> name is Phil Warner. </b>
+          I started programming two years ago. I attended the Iron Yard's Front End Engineering course in Houston, TX in September 2014. While attending The Iron Yard I learned the basics of HTML5, CSS3, and Javascript. I’m proficient in Drupal 7 and am building modules to support Drupal 8. Outside of work I have been teaching myself Meteor and React using resources such as <a href='https://www.egghead.io' target='_blank'>egghead.io</a>, <a href='https://leveluptutorials.com' target='_blank'>leveluptutorials.com</a>, <a href='https://themeteorchef.com' target='_blank'>themeteorchef.com</a>, <a href='https://meteor.com' target='_blank'>meteor.com</a>, & <a href='https://facebook.github.io/react' target='_blank'>facebook.github.io/react</a>.</p>
+      </div>
         <div className='seperator push60'></div>
         <div>
           <p>Like most developers that come out of a programming bootcamp, my path into the programing world started somewhere completely different.</p>

@@ -14,10 +14,13 @@
   position: relative;
 }
 
-::selection,
+::selection {
+  background: #ffb7b7;
+}
 ::-moz-selection {
   background: #ffb7b7;
 }
+
 
 h1 {
   font-size: 50px;

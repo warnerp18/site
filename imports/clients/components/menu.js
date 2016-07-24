@@ -13,9 +13,6 @@ export default class Menu extends Component {
         <Link to='https://www.github.com/warnerp18' target='_blank' className='icon github'></Link>
        </span>
        <span>
-         <Link to="/pics" className='menuLink'>Pics</Link>
-       </span>
-       <span>
          <Link to="/work" className='menuLink'>Work</Link>
        </span>
        <span>
@@ -28,3 +25,6 @@ export default class Menu extends Component {
     )
   }
 }
+       //<span>
+         //<Link to="/pics" className='menuLink'>Pics</Link>
+       //</span>
