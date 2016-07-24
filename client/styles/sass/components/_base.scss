@@ -65,6 +65,9 @@ a {
 .contain580{
  max-width: 580px;
  margin: 0 auto;
+ @include breakpoint(max-width 580px){
+    padding: 0 15px;
+ }
 }
 .push60{
   margin-bottom: 60px;
