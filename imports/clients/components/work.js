@@ -56,19 +56,31 @@ export default class Work extends Component {
               <div className='imageContainer'>
                 <p>Blog section for a Fortune 100 that I built and was succesfully integerated into it's site. Built with Drupal, PHP, Javascript, & Instagram's API.</p>
                 <Link to='https://www.camdenliving.com/blog' target='_blank'>
-                  <img src='/images/camdenblog.png'/>
+                  <img src='/images/camdenblog.jpg'/>
                 </Link>
               </div>
               <div className='imageContainer'>
                 <p>Built with Drupal and PHP</p>
                 <Link to='http://www.safetyvision.com' target='_blank'>
-                  <img src='/images/sv.png'/>
+                  <img src='/images/sv.jpg'/>
                 </Link>
               </div>
               <div className='imageContainer'>
                 <p>Custome template I built which is now used to on over 150 sites. Built with Drupal, PHP, & jQuery.</p>
                 <Link to='http://liveseminoletrails.com/' target='_blank'>
-                  <img src='/images/asset.png'/>
+                  <img src='/images/asset.jpg'/>
+                </Link>
+              </div>
+              <div className='imageContainer'>
+                <p>A web app built with Meteor and React. Built to track my workout progress. A web app that I really plan on using in my life.</p>
+                <Link to='https://github.com/warnerp18/xFitTracker' target='_blank'>
+                  <img src='/images/wod.jpg'/>
+                </Link>
+              </div>
+              <div className='imageContainer'>
+                <p>A web app built with Meteor and React. Built to track my workout progress. A web app that I really plan on using in my life.</p>
+                <Link to='https://github.com/warnerp18/markbin' target='_blank'>
+                  <img src='/images/markbin.jpg'/>
                 </Link>
               </div>
             </div>
@@ -76,19 +88,31 @@ export default class Work extends Component {
               <div className='imageContainer'>
                 <p>A website for a local bank in and around the Houston area. Built with Drupal and PHP.</p>
                 <Link to='https://www.texasgulfbank.com' target='_blank'>
-                  <img src='/images/tgb.png'/>
+                  <img src='/images/tgb.jpg'/>
                 </Link>
               </div>
               <div className='imageContainer'>
                 <p>My first professionaly built site using Drupal and PHP.</p>
                 <Link to='http://www.cityscapebrokers.com' target='_blank'>
-                  <img src='/images/csb.png'/>
+                  <img src='/images/csb.jpg'/>
                 </Link>
               </div>
               <div className='imageContainer'>
                 <p>My final project during The Iron Yard.Using backbone.js, stripe.js, & firebase.</p>
                 <Link to='https://warnerp18.github.io/Final-Project/' target='_blank'>
-                  <img src='/images/fp.png'/>
+                  <img src='/images/fp.jpg'/>
+                </Link>
+              </div>
+              <div className='imageContainer'>
+                <p>A web app built with Meteor and React. This web app uses the Imigur API to pull in images, title, and the image ranking based off of likes and dislikes.</p>
+                <Link to='https://github.com/warnerp18/images' target='_blank'>
+                  <img src='/images/imigur.jpg'/>
+                </Link>
+              </div>
+              <div className='imageContainer'>
+                <p>A web app built with Meteor and React. A web app that mimicks the site bitly.com. That takes a link put in by a user and shortens the link.</p>
+                <Link to='https://github.com/warnerp18/linkshortener' target='_blank'>
+                  <img src='/images/linkshortener.jpg'/>
                 </Link>
               </div>
             </div>
