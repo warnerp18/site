@@ -49,7 +49,7 @@ export default class Work extends Component {
         <section >
           <div className='contain580 push60 workDescription'>
             <h1>My Work</h1>
-            <p>Below is a sampeling of both my own personal projects and work i've done professionally.</p>
+            <p>Below is a sampling of both my own personal projects and work i've done professionally.</p>
            </div>
           <div className='work-container'>
             <div className='row float-left two-col'>
