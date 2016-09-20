@@ -66,7 +66,7 @@ export default class Work extends Component {
                 </Link>
               </div>
               <div className='imageContainer'>
-                <p>Custome template I built which is now used to on over 150 sites. Built with Drupal, PHP, & jQuery.</p>
+                <p>Custom template I built which is now used on over 150 sites. Built with Drupal, PHP, & jQuery.</p>
                 <Link to='http://liveseminoletrails.com/' target='_blank'>
                   <img src='/images/asset.jpg'/>
                 </Link>
@@ -78,7 +78,7 @@ export default class Work extends Component {
                 </Link>
               </div>
               <div className='imageContainer'>
-                <p>A web app built with Meteor and React. Built to track my workout progress. A web app that I really plan on using in my life.</p>
+                <p>A web app built with Meteor and React. A live pastebin for HTML, CSS & JavaScript. Thid app mimicks sites such as JSBin and Code Bin</p>
                 <Link to='https://github.com/warnerp18/markbin' target='_blank'>
                   <img src='/images/markbin.jpg'/>
                 </Link>
@@ -92,13 +92,13 @@ export default class Work extends Component {
                 </Link>
               </div>
               <div className='imageContainer'>
-                <p>My first professionaly built site using Drupal and PHP.</p>
+                <p>My first professionally built site using Drupal and PHP.</p>
                 <Link to='http://www.cityscapebrokers.com' target='_blank'>
                   <img src='/images/csb.jpg'/>
                 </Link>
               </div>
               <div className='imageContainer'>
-                <p>My final project during The Iron Yard.Using backbone.js, stripe.js, & firebase.</p>
+                <p>My final project during The Iron Yard. Using backbone.js, stripe.js, & firebase.</p>
                 <Link to='https://warnerp18.github.io/Final-Project/' target='_blank'>
                   <img src='/images/fp.jpg'/>
                 </Link>
@@ -110,7 +110,7 @@ export default class Work extends Component {
                 </Link>
               </div>
               <div className='imageContainer'>
-                <p>A web app built with Meteor and React. A web app that mimicks the site bitly.com. That takes a link put in by a user and shortens the link.</p>
+                <p>A web app built with Meteor and React that mimicks the site bitly.com. It takes a link put in by a user and shortens the link.</p>
                 <Link to='https://github.com/warnerp18/linkshortener' target='_blank'>
                   <img src='/images/linkshortener.jpg'/>
                 </Link>
