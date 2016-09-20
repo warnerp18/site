@@ -26,6 +26,7 @@ export default class Front extends Component {
       </section>
       <section className='contain580 push60 aboutme'>
       <div className='push60'>
+      <img src="images/prof.jpg" className='profPic' />
         <p>
           <span>My</span>
           <b> name is Phil Warner. </b>
