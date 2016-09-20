@@ -19,7 +19,7 @@ export default class Front extends Component {
       <Menu />
       <section className='header-image'>
         <div className='text-container'>
-                <h1>I am Phil</h1><br />
+                <h1>I'm Phil</h1><br />
                 <h2>I love to code &  backpack</h2>
                 <a href='#' onClick={this.scrollToNextSection}>read more</a>
         </div>
