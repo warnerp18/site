@@ -5,7 +5,13 @@ import Footer from './footer';
 
 
 export default class Front extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hover: '',
+    }
 
+  }
   scrollToNextSection(){
     $('html, body').animate({
         scrollTop: $(".aboutme").offset().top
@@ -13,7 +19,20 @@ export default class Front extends Component {
     e.preventDefault();
   }
 
+  didHover() {
+    this.setState({
+      hover: 'flipped',
+    });
+  }
+
+  leaveHover() {
+    this.setState({
+      hover: '',
+    });
+  }
+
   render(){
+    const flipped = this.state.hover ? 'flipped' : '';
     return (
     <div>
       <Menu />
@@ -26,7 +45,12 @@ export default class Front extends Component {
       </section>
       <section className='contain580 push60 aboutme'>
       <div className='push60'>
-      <img src="images/prof.jpg" className='profPic' />
+        <div className='profPicContainer'>
+          <div id='card' className={ flipped } onMouseOver={ () => this.didHover() } onMouseOut={ () => this.leaveHover() }>
+            <img src="images/prof.jpg" className='profPic workPic front' />
+            <img src='images/afghan1.jpg'className='profPic afghanPic back' />
+          </div>
+        </div>
         <p>
           <span>My</span>
           <b> name is Phil Warner. </b>
