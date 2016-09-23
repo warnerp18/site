@@ -8,7 +8,7 @@ export default class Front extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hover: '',
+      hover: false,
     }
 
   }
@@ -21,13 +21,19 @@ export default class Front extends Component {
 
   didHover() {
     this.setState({
-      hover: 'flipped',
+      hover: true,
     });
   }
 
   leaveHover() {
     this.setState({
-      hover: '',
+      hover: false,
+    });
+  }
+
+  flipImage(){
+    this.setState({
+      hover: !this.state.hover,
     });
   }
 
@@ -46,7 +52,7 @@ export default class Front extends Component {
       <section className='contain580 push60 aboutme'>
       <div className='push60'>
         <div className='profPicContainer'>
-          <div id='card' className={ flipped } onMouseOver={ () => this.didHover() } onMouseOut={ () => this.leaveHover() }>
+          <div id='card' className={ flipped } onClick={ () => this.flipImage() }onMouseOver={ () => this.didHover() } onMouseOut={ () => this.leaveHover() }>
             <img src="images/prof.jpg" className='profPic workPic front' />
             <img src='images/afghan1.jpg'className='profPic afghanPic back' />
           </div>
