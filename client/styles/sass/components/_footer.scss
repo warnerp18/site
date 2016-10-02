@@ -5,9 +5,6 @@ footer {
   .footer-container{
     max-width: 840px;
     margin: 0 auto;
-    @include breakpoint(max-width 840px){
-      padding: 0 15px;
-    }
     &:after{
       display: block;
       content: '';
@@ -29,6 +26,14 @@ footer {
         color: black;
         text-decoration: underline;
       }
+      @include breakpoint(max-width 480px){
+          float: none;
+          width: 100%;
+          text-align: center;
+      }
+    }
+    @include breakpoint(max-width 840px){
+      padding: 0 15px;
     }
   }
 }

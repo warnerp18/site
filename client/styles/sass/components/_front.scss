@@ -41,9 +41,14 @@
     }
     .open.header-about{
       top: 55%;
-    }
-  }
-}
+      @include breakpoint(max-width 480px){
+         h2 {
+           font-size: 25px
+         }
+       }
+     }
+   }
+ }
 
 .aboutme{
  padding: 30px 0;
