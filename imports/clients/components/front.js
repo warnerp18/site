@@ -12,6 +12,17 @@ export default class Front extends Component {
     }
 
   }
+
+  componentDidMount(){
+    const ELEM = [...document.querySelector('.text-container').childNodes];
+    setTimeout( () => {
+      ELEM.map(items =>{
+        className= items.className;
+        console.log(items);
+        items.className = `${className} open`;
+      })
+    }, 800)
+  }
   scrollToNextSection(){
     $('html, body').animate({
         scrollTop: $(".aboutme").offset().top
@@ -37,16 +48,24 @@ export default class Front extends Component {
     });
   }
 
+  slideInEffect() {
+    console.log(this);
+  }
+
   render(){
     const flipped = this.state.hover ? 'flipped' : '';
     return (
     <div>
       <Menu />
       <section className='header-image'>
-        <div className='text-container'>
-                <h1>I'm Phil</h1><br />
-                <h2>I love to code &  backpack</h2>
-                <a href='#' onClick={this.scrollToNextSection}>read more</a>
+        <div className='text-container' onLoad={() => this.slideInEffect()}>
+          <div className='name'>
+            <h1>I'm Phil</h1><br />
+          </div>
+          <div className='header-about'>
+            <h2>I love to code & backpack</h2>
+            <a href='#' onClick={this.scrollToNextSection}>read more</a>
+          </div>
         </div>
       </section>
       <section className='contain580 push60 aboutme'>
