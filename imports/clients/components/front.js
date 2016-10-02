@@ -18,8 +18,6 @@ export default class Front extends Component {
     setTimeout( () => {
       ELEM.map(items =>{
         className= items.className;
-        console.log(items);
-        debugger;
         items.className = `${className} open`;
       })
     }, 800)
