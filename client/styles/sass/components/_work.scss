@@ -16,8 +16,8 @@
       content: "";
       clear: both;
     }
-    @include breakpoint(max-width 1024px){
-      padding: 0 15px;
+    @include breakpoint(max-width 1300px){
+      padding: 0 30px;
     }
     .row{
       .imageContainer{
