@@ -53,6 +53,15 @@ export default class Front extends Component {
 
   render(){
     const flipped = this.state.hover ? 'flipped' : '';
+    const imgStyle = {
+      width: '100%',
+      margin:'20px 0 0'
+    }
+    const captionStyle = {
+       textAlign: 'center',
+       fontStyle: 'italic',
+       marginBottom: '20px',
+    }
     return (
     <div>
       <Menu />
@@ -85,6 +94,7 @@ export default class Front extends Component {
           <p>Like most developers that come out of a programming boot camp, my path into the programming world started somewhere completely different.</p>
           <p>I am the son of a U.S. Army Green Beret, and as a child I spent a lot of time outdoors, camping and hiking with my father. Growing up in the military I developed an affinity for travel and adventure, so I joined the Army at 17. After graduating high school, I finished boot camp and went to The Citadel, The Military College of South Carolina. During my sophomore year at The Citadel in Charleston, SC, I left for my first of two deployments to Afghanistan. After my second deployment I returned to The Citadel and graduated in 2010.</p>
           <p>I spent the next four years traveling to over 35 countries and working overseas. Two of my most memorable travel moments during that time included hikes. In 2013, I spent two weeks hiking to Everest Base Camp which was one of the best experiences of my life. After getting back to Kathmandu, I then spent another week traveling around Nepal. Then in 2014, I climbed Kilimanjaro which was the toughest climb I’ve ever accomplished. The night summit was incredibly challenging, but so rewarding when I finally made it to the top and was able to watch the sunrise.</p>
+        <img src="images/everest.jpg" style={imgStyle} title="Backpacking my way up to Everest Base Camp. Everst's peak can be seen in the far background poking up behind the front mountain" alt="backpacking my way up to Everest Base Camp" /><figcaption style={captionStyle}>Day 2 of my trek to Everest Base Camp. You can see Everest in very far background. The moutain peak that is poking up behind the white mountain range is Mount Everest.</figcaption>
 <p>During my time abroad, I came across an article explaining the demand for developers and their impact on the future. This article pointed me to codecademy.com. My love for coding started at Codecademy and my desire to learn more has only grown. I began my coding career at The Iron Yard where we learned the basics of HTML, CSS, and SCSS. We then moved on to Javascript and after 12 weeks I had made multiple single page applications using APIs from Four Square, Firebase, & Stripe.</p>
 <p>After graduating from The Iron Yard I was hired by Poetic Systems and began learning their web development stack which included Drupal, Javascript, HTML5, CSS3, SCSS, PHP, and jQuery. I had never worked on a CMS before and had to jump in the deep end and learn quickly. I have since built multiple fully responsive websites, custom Drupal 7 & Drupal 8 modules using both PHP and Javascript. Our app team uses Meteor and React, and on my own time I have started learning the App team's stack in order to be a more well-rounded developer. When I'm not working or spending my time hiking, backpacking, climbing, or camping, I enjoy learning and trying to develop my skills.</p>
         </div>
