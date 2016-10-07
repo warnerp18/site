@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 import Menu from './menu';
 import Footer from './footer';
@@ -62,6 +63,18 @@ export default class Front extends Component {
        fontStyle: 'italic',
        marginBottom: '20px',
     }
+    const linkStyle = {
+      color: 'white',
+      textAlign: 'center',
+      display: 'inline-block',
+      padding: '10px 29px',
+      background: 'black',
+      borderRadius: '25px',
+      marginTop: '15px',
+    }
+    const containerStyle = {
+      textAlign: 'center',
+    }
     return (
     <div>
       <Menu />
@@ -97,6 +110,9 @@ export default class Front extends Component {
         <img src="images/everest.jpg" style={imgStyle} title="Backpacking my way up to Everest Base Camp. Everst's peak can be seen in the far background poking up behind the front mountain" alt="backpacking my way up to Everest Base Camp" /><figcaption style={captionStyle}>Day 2 of my trek to Everest Base Camp. You can see Everest in very far background. The moutain peak that is poking up behind the white mountain range is Mount Everest.</figcaption>
 <p>During my time abroad, I came across an article explaining the demand for developers and their impact on the future. This article pointed me to codecademy.com. My love for coding started at Codecademy and my desire to learn more has only grown. I began my coding career at The Iron Yard where we learned the basics of HTML, CSS, and SCSS. We then moved on to Javascript and after 12 weeks I had made multiple single page applications using APIs from Four Square, Firebase, & Stripe.</p>
 <p>After graduating from The Iron Yard I was hired by Poetic Systems and began learning their web development stack which included Drupal, Javascript, HTML5, CSS3, SCSS, PHP, and jQuery. I had never worked on a CMS before and had to jump in the deep end and learn quickly. I have since built multiple fully responsive websites, custom Drupal 7 & Drupal 8 modules using both PHP and Javascript. Our app team uses Meteor and React, and on my own time I have started learning the App team's stack in order to be a more well-rounded developer. When I'm not working or spending my time hiking, backpacking, climbing, or camping, I enjoy learning and trying to develop my skills.</p>
+        </div>
+        <div style={containerStyle}>
+         <Link to="/work" style={linkStyle}>See My Work</Link>
         </div>
       </section>
       <Footer />
