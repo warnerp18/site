@@ -54,6 +54,12 @@ export default class Work extends Component {
           <div className='work-container'>
             <div className='row float-left two-col'>
               <div className='imageContainer'>
+                <p>A web app built with ES6, Meteor, React, & fuse.js. Built to track my workout progress. A web app that I plan to use in my life. To see the repo click <Link to='https://github.com/warnerp18/xFitTracker' target='_blank' style={{color: '#000', textDecoration: 'underline'}}><em>here</em></Link>.</p>
+                <Link to='https://dry-mesa-44199.herokuapp.com/' target='_blank'>
+                  <img src='/images/wod.jpg'/>
+                </Link>
+              </div>
+              <div className='imageContainer'>
                 <p>Blog section for a Fortune 100 that I built and was succesfully integerated into it's site. Built with Drupal, PHP, Javascript, & Instagram's API.</p>
                 <Link to='https://www.camdenliving.com/blog' target='_blank'>
                   <img src='/images/camdenblog.jpg'/>
@@ -69,12 +75,6 @@ export default class Work extends Component {
                 <p>Custom template I built which is now used on over 150 sites. Built with Drupal, PHP, & jQuery.</p>
                 <Link to='http://liveseminoletrails.com/' target='_blank'>
                   <img src='/images/asset.jpg'/>
-                </Link>
-              </div>
-              <div className='imageContainer'>
-                <p>A web app built with Meteor and React. Built to track my workout progress. A web app that I really plan on using in my life.</p>
-                <Link to='https://github.com/warnerp18/xFitTracker' target='_blank'>
-                  <img src='/images/wod.jpg'/>
                 </Link>
               </div>
               <div className='imageContainer'>
