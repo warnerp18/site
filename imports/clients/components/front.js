@@ -92,9 +92,8 @@ export default class Front extends Component {
       <section className='contain580 push60 aboutme'>
       <div className='push60'>
         <div className='profPicContainer'>
-          <div id='card' className={ flipped } onClick={ () => this.flipImage() }onMouseOver={ () => this.didHover() } onMouseOut={ () => this.leaveHover() }>
+          <div id='card'}>
             <img src="images/prof.jpg" className='profPic workPic front' />
-            <img src='images/afghan1.jpg'className='profPic afghanPic back' />
           </div>
         </div>
         <p>

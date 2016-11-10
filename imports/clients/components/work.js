@@ -6,43 +6,9 @@ import 'react-photoswipe/lib/photoswipe.css';
 import Menu from './menu';
 import Footer from './footer';
 
-export default class Work extends Component {
-  renderGallery(e){
-    console.log(e);
-
-    let isOpen = true;
-
-    let items = [
-      {
-        src: 'https://scontent.fhou1-2.fna.fbcdn.net/t31.0-8/13568858_895274680665_2236933832197678919_o.jpg',
-        w: 1200,
-        h: 900,
-        title: 'Image 1'
-      },
-      {
-        src: 'http://lorempixel.com/1200/900/sports/2',
-        w: 1200,
-        h: 900,
-        title: 'Image 2'
-      }
-    ];
-
-    let options = {
-      //http://photoswipe.com/documentation/options.html
-    };
-
-    handleClose = () => {
-      isOpen: false
-    };
-    return(
-      <PhotoSwipe isOpen={isOpen} items={items} options={options} onClose={handleClose}/>
-    )
-  }
-
-  render() {
-
-
-
+//export default class Work extends Component {
+  //render() {
+const Work = (props) => {
     return (
       <div className='workComponent'>
         <Menu />
@@ -121,5 +87,7 @@ export default class Work extends Component {
         <Footer />
       </div>
     )
-  }
+  //}
 }
+
+export default Work;
