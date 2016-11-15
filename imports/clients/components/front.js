@@ -92,7 +92,7 @@ export default class Front extends Component {
       <section className='contain580 push60 aboutme'>
       <div className='push60'>
         <div className='profPicContainer'>
-          <div id='card'}>
+          <div id='card'>
             <img src="images/prof.jpg" className='profPic workPic front' />
           </div>
         </div>
