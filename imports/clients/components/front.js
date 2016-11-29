@@ -111,7 +111,7 @@ export default class Front extends Component {
 <p>After graduating from The Iron Yard I was hired by Poetic Systems and began learning their web development stack which included Drupal, Javascript, HTML5, CSS3, SCSS, PHP, and jQuery. I had never worked on a CMS before and had to jump in the deep end and learn quickly. I have since built multiple fully responsive websites, custom Drupal 7 & Drupal 8 modules using both PHP and Javascript. Our app team uses Meteor and React, and on my own time I have started learning the App team's stack in order to be a more well-rounded developer. When I'm not working or spending my time hiking, backpacking, climbing, or camping, I enjoy learning and trying to develop my skills.</p>
         </div>
         <div style={containerStyle}>
-         <Link to="/work" style={linkStyle}>See My Work</Link>
+          <a href='/work' className='button'>See My Work</a>
         </div>
       </section>
       <Footer />

@@ -96,3 +96,22 @@ a {
 .last {
   margin-right: 0;
 }
+
+.button {
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 29px;
+  background: #000;
+  border-radius: 25px;
+  margin-top: 15px;
+  border: 1px solid #fff;
+  transition: all .2s linear;
+  &:hover{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+    background-positon: right bottom;
+  }
+}
