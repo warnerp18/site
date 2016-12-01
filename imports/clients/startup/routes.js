@@ -18,5 +18,3 @@ Meteor.startup(() => {
   ReactDOM.render(routes, document.getElementById('app'));
 });
 
-    //<Route path='/pics' component={Pics} />
-    //<Route path='/pics/iceland' component={IcelandGallery} />

@@ -1,5 +1,5 @@
 footer {
-  padding: 60px 0;
+  padding: 30px 0;
   background: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   .footer-container{
@@ -9,6 +9,9 @@ footer {
       display: block;
       content: '';
       clear: both;
+    }
+    p{
+      margin-bottom: 0;
     }
     .float-left{
       width: 48%;
@@ -26,10 +29,13 @@ footer {
         color: black;
         text-decoration: underline;
       }
-      @include breakpoint(max-width 480px){
+      @include breakpoint(max-width 768px){
           float: none;
           width: 100%;
           text-align: center;
+          p {
+            margin-bottom: 10px;
+          }
       }
     }
     @include breakpoint(max-width 840px){

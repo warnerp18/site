@@ -7,7 +7,7 @@ export default class Footer extends Component {
         <section className='footer-container'>
           <div className='footer-left float-left'>
             <h2>About</h2>
-            <p>I am Phil, an infantry veteran turned developer who recently moved to San Francisco, CA. If you are hiring I'd love to speak to you about an open position.</p>
+            <p>I am Phil, an infantry veteran turned developer who recently moved to San Francisco, CA.</p>
           </div>
           <div className='footer-right float-left last'>
             <h2>Contact</h2>
