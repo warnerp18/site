@@ -6,9 +6,62 @@ import 'react-photoswipe/lib/photoswipe.css';
 import Menu from './menu';
 import Footer from './footer';
 
-//export default class Work extends Component {
-  //render() {
-const Work = (props) => {
+export default class Work extends Component {
+  componentDidMount(){
+    const secondHand = document.querySelector('.second');
+    const minuteHand = document.querySelector('.minute');
+    const hoursHand = document.querySelector('.hour');
+    const clock = document.querySelector('.clock');
+    const container = document.querySelector('.clockContainer')
+    let counter = {
+      s: 0,
+      m: 0,
+      h: 0,
+    }
+let previous = null;
+    function setDate(){
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const secondsDegree =  seconds * 6 ;
+      const minutes = now.getMinutes();
+      const minutesDegree = minutes * 6 ;
+      const hours = now.getHours();
+      const hoursDegree = hours % 12 / 12 * 360 + (minutesDegree / 12);
+      if(previous){
+        if(seconds < previous.s){
+            counter.s += 1;
+          }
+        if(minutes < previous.m){
+            counter.m += 1;
+          }
+        if(hours < previous.h){
+            counter.h += 1;
+          }
+
+      }
+
+      previous ={
+        s: seconds,
+        m: minutes,
+        h: hours,
+      };
+      const rgb = {
+         r: Math.floor(previous.s * 4.25),
+         g: Math.floor(previous.m * 4.25),
+         b: Math.floor(previous.h * 4.25),
+      }
+      secondHand.style.transform = `rotate(${secondsDegree + 360 * counter.s}deg)`;
+      minuteHand.style.transform = `rotate(${minutesDegree + 360 * counter.m}deg)`;
+      hoursHand.style.transform = `rotate(${hoursDegree + 360 * counter.h}deg)`;
+      clock.style.border = `20px solid rgb(${rgb.r},${rgb.g},${rgb.b})`;
+      container.style.background = `rgb(${rgb.b},${rgb.g},${rgb.r})`;
+    }
+
+
+    setInterval(setDate, 1000);
+  }
+  render() {
+//const Work = (props) => {
     return (
       <div className='workComponent'>
         <Menu />
@@ -29,6 +82,20 @@ const Work = (props) => {
                 <p>Blog section for a Fortune 100 that I built and was succesfully integerated into it's site. Built with Drupal, PHP, Javascript, & Instagram's API.</p>
                 <Link to='https://www.camdenliving.com/blog' target='_blank'>
                   <img src='/images/camdenblog.jpg'/>
+                </Link>
+              </div>
+              <div className='imageContainer'>
+                <p>A vanilla javascript clock that uses the hours, minutes, and seconds to give the background and clock border it's color.</p>
+                <Link to='https://github.com/warnerp18/js-clock' target='_blank'>
+                  <div className='clockContainer'>
+                    <div className='clock'>
+                      <div className='clock-face'>
+                        <div className='hand hour'></div>
+                        <div className='hand minute'></div>
+                        <div className='hand second'></div>
+                      </div>
+                    </div>
+                  </div>
                 </Link>
               </div>
               <div className='imageContainer'>
@@ -87,7 +154,7 @@ const Work = (props) => {
         <Footer />
       </div>
     )
-  //}
+  }
 }
 
-export default Work;
+//export default Work;
