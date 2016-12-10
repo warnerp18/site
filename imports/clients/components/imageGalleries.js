@@ -2,41 +2,59 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 import {PhotoSwipeGallery} from 'react-photoswipe';
+import Gallery from './Gallery';
 
 export default class ImageGalleries extends Component {
+
+  componentDidMount() {
+    console.log("TEST");
+    function Flickr(){
+      this.init();
+    }
+    Flickr.prototype = {
+      init: function() {
+        this.key = "1a56d279a88a12572362be86e002b99b",
+          this.Secret = "15a8ecb093fa0fd7",
+            this.getJSON();
+      },
+      getJSON: function(){
+        const Key = "1a56d279a88a12572362be86e002b99b"
+        const photoSetKey = "c9deaa7c24dc04a72c26b486333db809"
+        const Secret = "15a8ecb093fa0fd7"
+        // const src = `https://api.flickr.com/services/rest/?&method=flickr.people.getPublicPhotos&api_key=${Key}&user_id=149595845@N07&format=json&per_page=20&nojsoncallback=1`;i
+        const src = `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${photoSetKey}&photoset_id=72157673604746003&user_id=149595845%40N07&format=json&nojsoncallback=1&auth_token=72157677413636586-9036f2397496d8a7&api_sig=128de85ee199da264ff9fc1bf30e69af`
+        console.log(src);
+        return $.getJSON(src)
+        .then(function(data){
+          var imgSrc;
+          console.log(data.photoset.photo);
+          //        for( photo in data.photos.photo){
+          for( photo in data.photoset.photo){
+            console.log(data.photoset.photo[photo]);
+            imgSrc = data.photoset.photo[photo];
+            var img = 'https://farm' + imgSrc.farm + '.staticflickr.com/' + imgSrc.server + '/' + imgSrc.id + '_' + imgSrc.secret + '_b.jpg';
+            $('#flickr').append(`<img src=${img} />`)
+
+
+            //imgSrc = data.photos.photo[photo];
+            //var img = 'https://farm' + imgSrc.farm + '.staticflickr.com/' + imgSrc.server +
+            //'/' + imgSrc.id + '_' + imgSrc.secret + '_b.jpg';
+            //$('#flickr').append(`<img src=${img} />`)
+          }
+        })
+      },
+
+    }
+    document.addEventListener( "DOMContentLoaded", function() {
+      var flickrFeed = new Flickr();
+
+    });
+  }
   render() {
     return (
-      <section className='image-galleries'>
-        <Link to="" className='float-left'>
-          <img src='/images/yellowstone/cubs.jpg' />
-          <h2>Montana/YellowStone</h2>
-          <span>A week long trip to Montana and YellowStone Nation Park</span>
-        </Link>
-        <Link to="" className='float-left'>
-          <img src='/images/nepal/everest1.jpg' />
-          <h2>Nepal</h2>
-          <span>A 3 week trip to Everest Base Camp and around Nepal</span>
-        </Link>
-        <Link to="#" className='float-left'>
-          <img src='/images/iceland/iceland1.jpg' />
-          <h2>Iceland</h2>
-          <span>One of my favorite countries I've ever visited.</span>
-        </Link>
-        <Link to="" className='float-left'>
-          <img src='/images/kili/kili1.jpg' />
-          <h2>Kilimanjaro</h2>
-          <span>Summiting Kilimanjaro - 5,895 metres (19,341 ft)</span>
-        </Link>
-        <Link to="">
-          <img src='' />
-          <h2>Europe</h2>
-          <span></span>
-        </Link>
-        <Link to="">
-          <img src='' />
-          <h2></h2>
-          <span></span>
-        </Link>
+      <section className='#flickr' id='flickr'>
+      HELLO
+      <Gallery />
       </section>
     )
   }

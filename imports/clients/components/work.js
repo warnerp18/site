@@ -110,12 +110,6 @@ let previous = null;
                   <img src='/images/asset.jpg'/>
                 </Link>
               </div>
-              <div className='imageContainer'>
-                <p>A web app built with Meteor and React. A live pastebin for HTML, CSS & JavaScript. Thid app mimicks sites such as JSBin and Code Bin</p>
-                <Link to='https://github.com/warnerp18/markbin' target='_blank'>
-                  <img src='/images/markbin.jpg'/>
-                </Link>
-              </div>
             </div>
             <div className='row float-left two-col last'>
               <div className='imageContainer'>
@@ -143,9 +137,9 @@ let previous = null;
                 </Link>
               </div>
               <div className='imageContainer'>
-                <p>A web app built with Meteor and React that mimicks the site bitly.com. It takes a link put in by a user and shortens the link.</p>
-                <Link to='https://github.com/warnerp18/linkshortener' target='_blank'>
-                  <img src='/images/linkshortener.jpg'/>
+                <p>A web app built with Meteor and React. A live pastebin for HTML, CSS & JavaScript. Thid app mimicks sites such as JSBin and Code Bin</p>
+                <Link to='https://github.com/warnerp18/markbin' target='_blank'>
+                  <img src='/images/markbin.jpg'/>
                 </Link>
               </div>
             </div>
