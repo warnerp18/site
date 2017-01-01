@@ -18,7 +18,7 @@ export default class Work extends Component {
       m: 0,
       h: 0,
     }
-let previous = null;
+    let previous = null;
     function setDate(){
       const now = new Date();
       const seconds = now.getSeconds();
@@ -72,6 +72,16 @@ let previous = null;
            </div>
           <div className='work-container'>
             <div className='row float-left two-col'>
+
+
+
+            <div className='imageContainer'>
+                <p>A web app built with ES6, Meteor, React, & fuse.js. Built to track my workout progress. A web app that I plan to use in my life. To see the repo click <Link to='https://github.com/warnerp18/xFitTracker' target='_blank' style={{color: '#000', textDecoration: 'underline'}}><em>here</em></Link>.<br /><i style={{fontStyle: 'italic'}}>*This is a work in progress. I have a lot of features I still want to implement and things to improve</i></p>
+<video id="sampleMovie" src="https://github.com/warnerp18/cssVariables/blob/master/CSSVariables.mov" controls></video>
+                </div>
+
+
+
               <div className='imageContainer'>
                 <p>A web app built with ES6, Meteor, React, & fuse.js. Built to track my workout progress. A web app that I plan to use in my life. To see the repo click <Link to='https://github.com/warnerp18/xFitTracker' target='_blank' style={{color: '#000', textDecoration: 'underline'}}><em>here</em></Link>.<br /><i style={{fontStyle: 'italic'}}>*This is a work in progress. I have a lot of features I still want to implement and things to improve</i></p>
                 <Link to='https://dry-mesa-44199.herokuapp.com/' target='_blank'>
